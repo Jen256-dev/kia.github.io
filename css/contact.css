@@ -1,0 +1,120 @@
+.contact-container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 5rem;
+    padding: 4rem;
+    background-color: var(--color-bg1);
+    margin: 7rem auto;
+    height: 30rem;
+    border-radius: 1rem;
+}
+.contact-aside{
+    background-color: var(--color-primary);
+    padding: 3rem;
+    position: relative;
+    border-radius: 1rem;
+    bottom: 7rem;
+    width: fit-content;
+    height: fit-content;
+}
+.aside-image{
+    max-width: 30rem;
+    margin-bottom: 2rem;
+}
+.contact-aside h5{
+    margin-bottom: 1rem;
+    text-align: left;
+}
+.contact-aside p{
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+}
+.contact-details{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.contact-socials{
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 3rem;
+}
+.contact-socials a{
+    background-color: var(--color-bg2);
+    padding: 0.5rem;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    transition: var(--transition);
+
+}
+.contact-socials a:hover{
+    background: transparent;
+}
+
+/* end of aside */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    margin-right: 4rem;
+}
+.form-name{
+    display: flex;
+    gap: 1.3rem;
+}
+form input[type="text"]{
+    width: 50%;
+}
+input,textarea{
+    width: 100%;
+    padding: 1rem;
+    background: var(--color-bg);
+    color: var(--color-white);
+}
+form .btn{
+    width: max-content;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+/* media queries  for tablets*/
+@media screen and (max-width:1024px){
+   
+    .contact-container{
+        margin-top: 3rem;
+        padding: 1.5rem;
+        gap: 1.5rem;
+        height: auto;
+        width: fit-content;
+    }
+    .contact-aside{
+        bottom: 0;
+        width: fit-content;
+        padding: 1.5rem;
+
+    }
+    form{
+        align-self: center;
+        margin-right: 1.5rem;
+    }
+}
+/* media queries  for phones*/
+@media screen and (max-width:600px){
+    .contact-container{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-top: 0;
+        padding: 0;
+    }
+    
+    .form-name{
+       flex-direction: column;
+    }
+    form input[type="text"]{
+        width: 100%;
+    }
+    form{
+        
+        margin-right:0 1.5rem 3rem;
+    }
+}
